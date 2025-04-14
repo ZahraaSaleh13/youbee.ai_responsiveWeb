@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    width: 100%;
 }
 nav{
     background-color: white;
@@ -10,6 +11,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    
 }
 nav #logo{
     width: 200px;
@@ -39,6 +41,7 @@ main{
     color: white;
     align-items: center;
     padding: 100px;
+
 }
 main #building{
     width: 550px;
@@ -90,8 +93,7 @@ main p{
     justify-content: center;
   padding: 3%;
     flex-wrap: wrap;
-    width: 100%;
-    
+  
 }
 .box{
     display: flex;
@@ -253,19 +255,89 @@ main p{
 }
 
 #section6{
+    display: flex;
+    flex-direction: column;
     padding: 2%;
+    text-align: center;
+    color: rgb(3, 3, 79);
+    justify-content: center;
+    align-items: center;
 }
-
+#section6 p{
+    font-size: 1vw;
+}
+#section6 h2{
+    font-size: 2vw;
+}
 #coursesFlex{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 65%;
+    gap: 2%;
+    justify-content: center;
 }
 .course{
     width: 35%;
+    box-shadow: 5px 7px 30px black;
+    padding-bottom: 5%;
 }
 .course img{
     width: 100%;
+}
+.course p{
+    color: rgba(3, 3, 79, 0.592);
+}
+.course a{
+    text-decoration: none;
+    color: rgb(3, 3, 79);
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.course a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    color: white;
+    background: linear-gradient(140deg,black,yellow);
+    display: flex;
+    flex-direction: row;
+    padding: 2% 10%;
+}
+footer div{
+    width: 20%;
+    padding: 1%;
+}
+footer img{
+    width: 90%;
+}
+footer h5{
+    font-size: 1.2vw;
+}
+footer p{
+    font-size: 1.1vw;
+    color: rgba(255, 255, 255, 0.829);
+}
+footer a{
+    color: rgba(255, 255, 255, 0.829);
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+#socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.7vw;
+    gap: 25%;
+}
+#lastfooter{
+    background-color: black;
+    color: white;
+    text-align:center ;
+    padding: 1%;
 }
 @media screen and (max-width:1400px) {
 
@@ -292,9 +364,11 @@ main p{
     #section1 p{
         font-size: 1.5vw;
     }
+
     #section1 h3{
         font-size: 1.9vw;
     }
+    
     #section2 h1{
         font-size: 2.4vw;
         font-weight: bolder;
@@ -305,6 +379,7 @@ main p{
     }
     #section2 h3{
         font-size: 1.5vw;
+        margin-bottom: 4%;
     }
 
     #section3,#section4{
@@ -344,7 +419,39 @@ main p{
         font-size: 1.9vw;
         padding: 2% 8%;
     }
+
+    #section6 p{
+        font-size: 1.5vw;
+    }
+    #section6 h2{
+        font-size: 2.3vw;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    footer div{
+        width: 30%;
+        padding: 1%;
+    }
+    footer img{
+        width: 70%;
+    }
+    footer h5{
+        font-size: 1.8vw;
+    }
+    footer p{
+        font-size: 1.7vw;
+    }
+    footer a{
+        font-size: 1.7vw;
+    }
+    #socialMediaIcons{
+        font-size: 1.9vw;
+    }
 }
+
 
 @media screen and (max-width:800px) {
     main #building{
@@ -419,6 +526,44 @@ main p{
         padding: 4% 7%
 
     }
+    #coursesFlex{
+        flex-wrap:wrap;
+        width: 90%;
+      
+    }
+    .course{
+        width: 45%;
+        margin-bottom: 5%;
+        padding-bottom: 10%;
+    }
+    #coursesFlex p{
+        font-size: 2.5vw;
+    }
+    .course a{
+        font-size: 4.5vw;
+    }
+    footer{
+        gap: 10%;
+    }
+    footer div{
+        width: 40%;
+        padding: 1%;
+    }
+    footer img{
+        width: 70%;
+    }
+    footer h5{
+        font-size: 2.2vw;
+    }
+    footer p{
+        font-size: 2.1vw;
+    }
+    footer a{
+        font-size: 2.1vw;
+    }
+    #socialMediaIcons{
+        font-size: 2.4vw;
+    }
 }
 @media screen and (max-width:500px) {
     .box{
@@ -429,5 +574,39 @@ main p{
     }
     #section1 h3{
         font-size: 2.9vw;
+    }
+    #coursesFlex{
+        flex-direction: column;
+        width: 90%;
+      
+    }
+    .course{
+        width: 90%;
+        margin-bottom: 5%;
+        padding-bottom: 10%;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: left;
+    }
+    footer div{
+        width: 50%;
+        padding: 1%;
+        padding-right:5% ;
+    }
+    footer img{
+        width: 90%;
+    }
+    footer h5{
+        font-size: 3.2vw;
+    }
+    footer p{
+        font-size: 3.1vw;
+    }
+    footer a{
+        font-size: 3.1vw;
+    }
+    #socialMediaIcons{
+        font-size: 3.4vw;
     }
 }
