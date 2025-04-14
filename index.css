@@ -168,6 +168,7 @@ main p{
     box-shadow: none;
 }
 
+
 #section3,#section4{
     display: flex;
     flex-direction: row;
@@ -210,6 +211,62 @@ main p{
 }
 
 
+#section5{
+    color: white;
+    background: linear-gradient(140deg,black,yellow);
+    display: flex;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 15%;
+    flex-direction: column;
+    text-align: center;
+}
+#section5 h2{
+    font-size: 2vw;
+    font-weight: bolder;
+    padding: 0%;
+    margin: 2%;
+}
+#section5 p{
+    font-size: 1.1vw;
+    margin-bottom: 1%;
+
+}
+#section5 h3{
+    background-color: FFD400;
+   width:20%;
+    height: fit-content;
+    padding: 2% 1%;
+    border-radius: 4px;
+    box-shadow: 5px 7px 30px black;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 3%;
+    position: relative;
+    font-size: 1.3vw;
+    text-align: center;
+
+}
+#section5 h3:hover{
+    box-shadow: none;
+}
+
+#section6{
+    padding: 2%;
+}
+
+#coursesFlex{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.course{
+    width: 35%;
+}
+.course img{
+    width: 100%;
+}
 @media screen and (max-width:1400px) {
 
     nav a{
@@ -274,6 +331,19 @@ main p{
         font-size: 2vw;
         padding: 0%;
     }
+
+    #section5 h2{
+        font-size: 2.4vw;;
+    }
+    #section5 p{
+        font-size: 1.6vw;
+    
+    }
+    #section5 h3{
+        width: 20%;
+        font-size: 1.9vw;
+        padding: 2% 8%;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -330,6 +400,24 @@ main p{
     #section3 p, #section4 p{
         font-size: 3vw;
         padding: 0%;
+    }
+
+    #section5{
+        padding: 14%;
+    }
+    #section5 h2{
+        font-size: 5vw;
+    }
+    #section5 p{
+        font-size: 2.8vw;
+    
+    }
+    #section5 h3{
+        margin-top: 6%;
+        font-size: 3.5vw;
+        width: 42%;
+        padding: 4% 7%
+
     }
 }
 @media screen and (max-width:500px) {
